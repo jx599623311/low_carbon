@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{box-sizing: border-box;
+    margin:0;
+    padding: 5px 0px;
+  
+    font-family: "lato", sans-serif;
+    background:url(green1.jpg);
+    background-size:1300px 2000px;
+    background-repeat: no-repeat;
+  }
+  
+  a{
+    text-decoration:none;
+  }
+  p{
+  font-size:20px;
+  }
+  .btn{
+    font-size:20px;
+  
+  }
+      </style>
+<body>
+    <p align="center">Table of content</p>
+  <div style="text-align:center">
+  <button class="btn"  id="btn" onclick="TapItem2()">What is low carbon life</button>
+  </div>
+  <br/>
+  <div style="text-align:center">
+  <button class="btn" id="btn" onclick="TapItem()">What is the advantage of low carbon life?</button>
+  </div>
+  <br/>
+  <div style="text-align:center">
+  <button class="btn" id="btn" onclick="TapItem1()">How can we take steps to low carbon life</button>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="box2">
+        <p align=center><strong>What is low carbon life</strong></p>
+          <br/>
+          <p ></p>
+</div>     
+<br/>
+            <div id="box">
+            <p  align=center><strong>What is the advantage of low carbon life?</strong></p>
+          
+            <br/>
+            <p><p>  
+              
+            </div>
+            <br/>
+            <br/>
+            
+            
+       
+           
+            <div id="box1">
+            <p align="center"><strong>How can we take steps to low carbon life </strong></p>
+             <p> <p>
+              </div>
+ <Script>
+               function TapItem2(){
+    var el2=document.getElementById("box2");
+    el2.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+     function TapItem(){
+    var el=document.getElementById("box");
+    el.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem1(){
+    var el1=document.getElementById("box1");
+    el1.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+ </Script>
+</body>
+</html>
