@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{box-sizing: border-box;
+  margin:0 18px;
+  padding: 5px 0px;
+  font-family: "lato", sans-serif;
+  background-image:url(green1.jpg),
+             url(low.jpg);
+  background-size:1300px 560px,
+                  1300px 290px;
+  background-repeat: no-repeat, no-repeat;
+  background-position:top left;
+}
+    nav{
+  display:inline;
+  vertical-align:middle;
+  margin-top:100px;
+  font-size:25px;
+}
+.fixed{
+  position:fixed;
+  top:0;
+  background-color:white;
+  z-index:9999;
+  width:100%;
+}
+
+a{
+  text-decoration:none;
+}
+nav{
+  font-size:30px;
+  align-items:center;
+}
+p{
+font-size:20px;
+}
+.btn{
+  font-size:20px;
+}
+.btn2{
+  font-size:15px;
+}
+
+.btn1{
+float:right;
+}
+.signinfrm {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  
+}
+.form {
+  background-color: white;
+  width: 370px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  
+}
+    </style>
+<body>
+  
+<!--<button class="btn1"  id="btn" onclick="showtable()">show the table of content</button>//-->
+<!--<button class="btn1"  id="btn" onclick="hidetable()">hide the table of content</button>-->
+<div id="table" class="signinfrm">
+<form class="form">
+<p align="center">Table of content</p>
+<div class="line1"  >
+<a class="btn"  id="btn" onclick="TapItem2()">1. Introduction</a>
+</div>
+<br/>
+<div class="line1"  >
+<a class="btn" id="btn" onclick="TapItem()">2. Formation factors</a>
+</div>
+<div class="line" >
+<a class="btn2" id="btn" onclick="TapItem1()">2.1 Carbon Dioxide</a>
+</div>
+<div class="line">
+<a class="btn2" id="btn" onclick="TapItem3()">2.2 Other Greenhouse Gases</a>
+</div>
+<br/>
+<div class="line1"  >
+<a class="btn" id="btn" onclick="TapItem4()">3. Classification</a>
+</div>
+<div class="line">
+<a class="btn2" id="btn" onclick="TapItem5()">3.1 Natural Greenhouse Effect</a>
+</div>
+<div class="line">
+<a class="btn2" id="btn" onclick="TapItem6()">3.2 Enhanced Greenhouse Effect</a>
+</div>
+<br/>
+<div class="line1">
+<a class="btn" id="btn" onclick="TapItem7()">4 Harmful consequences</a>
+</div>
+<div class="line">
+<a class="btn2" id="btn" onclick="TapItem8()">4.1 Global warming</a>
+</div>    
+<div class="line">
+<a class="btn2" id="btn" onclick="TapItem9()">4.2 Other influences</a>
+</div>  
+<br/>
+<div class="line1">
+<a class="btn" id="btn" onclick="TapItem10()">5 Reponse measure</a>
+</div>      
+<div class="line">
+<a class="btn2" id="btn" onclick="TapItem11()">5.1 Reduce CO2 in the atmosphere? </a>
+</div>  
+<div class="line">
+<a class="btn2" id="btn" onclick="TapItem12()">5.2 Adapt to the climate</a>
+</div>  
+<div class="line">
+<a class="btn2" id="btn" onclick="TapItem13()">5.3 Reduction of CO2 emissions</a>
+</div>  
+<br>   
+  
+  </div>  
+</form>
+</div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+<a href="study.php" style="color:rgb(59,194,248);"><strong></strong></a>
+<div id="box2">
+<p align=center><strong>Introduction</strong></p>
+<p >Greenhouse effect refers to the insulation effect of greenhouse gases in the atmosphere on the earth.
+Solar short-wave radiation can penetrate the atmosphere into the ground, while the long-wave radiation released by the warming of the ground is absorbed by carbon dioxide and other substances in the atmosphere, thus warming the surface and lower atmosphere. If the atmosphere does not have this effect, then the surface The temperature will drop about 30 or more. Conversely, if the greenhouse effect continues to strengthen, the global temperature will continue to rise year by year. Because it acts like a greenhouse for cultivating crops, it is called the greenhouse effect. The greenhouse effect is considered by many scientists to be the cause of global warming.
+</p>
+</div>     
+<br/>
+<div id="box">
+<p  align=center><strong>Formation factors</strong></p>
+<p>The greenhouse effect is derived from greenhouse gases. Because the function of gases such as carbon dioxide to absorb heat energy is to only allow sunlight to enter and prevent its reflection, thereby achieving heat preservation and temperature rise, it is called a greenhouse gas.</p>
+</div>
+<button class="btn"  id="btn" onclick="showImg()">Images related to danger of Greenhouse effect</button>
+<button class="btn"  id="btn" onclick="hideImg()">hide</button>
+<br/>
+<br/>
+<img id="img1" src="dis.jpg" alt="" width=1300 height=300>
+<div id="box1">
+<p align="center"><strong>Carbon Dioxide</strong></p>
+<p>The greenhouse effect is mainly caused by the excessive burning of coal, oil and natural gas in modern industrial society, and the release of a large amount of carbon dioxide gas into the atmosphere after the combustion of these fuels.
+Carbon dioxide gas has the functions of heat absorption and heat insulation. The result of its increase in the atmosphere is to form an invisible glass cover, so that the heat radiated by the sun to the earth cannot radiate to the outer space, and the result is that the earth's surface becomes hotter. Carbon dioxide is the most abundant greenhouse gas, accounting for about 0.03% of the total volume of the atmosphere.<p>
+</div>
+<div id="box3">
+<p align="center"><strong>Other Greenhouse Gases</strong></p>
+<p>Human activities and nature also emit other greenhouse gases, which are: chlorofluorocarbons (CFC), methane, low-altitude ozone and nitrogen oxide gases. Many other limited gases also produce greenhouse effects, some of which are stronger than carbon dioxide For example, the heat absorption per molecule of methane is 21 times that of carbon dioxide, and nitric oxide (N2O) is higher, 270 times that of carbon dioxide.<p>
+</div>
+<img width="1300" height="500" src="https://img95.699pic.com/photo/50087/4092.jpg_wh300.jpg">
+<div id="box4">
+<p align="center"><strong>Classification</strong></p>
+</div>>
+<div id="box5">
+<p align="center"><strong>Natural Greenhouse Effect</strong></p>
+<p>Atmospheric radiation is emitted in all directions, including to the Earth's surface below. Greenhouse gases effectively absorb infrared radiation emitted by the Earth's surface, the same gases in the atmosphere itself, and clouds. Greenhouse gases trap heat within the surface-troposphere system, known as the "natural greenhouse effect".<p>
+</div>
+<div id="box6">
+<p align="center"><strong>Enhanced Greenhouse Effect</strong></p>
+<p>Atmospheric radiation is strongly coupled to the temperature levels of its gas emissions. In the troposphere, the temperature generally decreases with increasing altitude. Infrared radiation emitted from a certain altitude into space is generally produced at an altitude with an average temperature of -19°C, and is balanced by the income of solar radiation, so that the temperature of the earth's surface can be maintained at an average of 14°C. An increase in the concentration of greenhouse gases leads to an increase in the opacity of the atmosphere to infrared radiation, resulting in the emission of effective radiation into space from lower temperatures and higher altitudes. This creates a radiative forcing, an imbalance that can only be compensated by an increase in the temperature of the surface-tropospheric system. This is the "enhanced greenhouse effect".<p>
+</div>
+<img width="1250" height="500" src="data:image/jpeg;base64,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">
+<div id="box7">
+<p align="center"><strong>Harmful consequences</strong></p>
+</div>>
+<div id="box8">
+<p align="center"><strong>Global warming</strong></p>
+<p>Observational data show that since the 19th century, the global average temperature has increased by 0.3-0.6°C, and the temperature increase has been even greater since 1990. Global warming is mainly caused by the greenhouse effect. Since the industrial revolution, a large amount of fossil energy has been exploited for industrial production, transportation and residents' lives, resulting in an increase in the concentration of carbon dioxide in the atmosphere, which intensifies the greenhouse effect and breaks the original balance. , so that the earth receives more heat from the sun than the earth emits into space, resulting in global warming.
+The greenhouse effect is a phenomenon in which the global temperature rises due to the increase in the content of gases such as carbon dioxide in the atmosphere. If the carbon dioxide content doubles, the global temperature will rise by 3°C to 5°C, and the polar regions may rise by 10°C, and the climate will warm significantly.<p>
+</div> 
+<div id="box9">
+<p align="center"><strong>Other influences</strong></p>
+<p>1. The increase of pests and diseases on the earth;<p>
+<br/>
+<p>2. Sea level rise;<p>
+<br>
+<p>3. The climate is abnormal, and ocean storms increase;<p>
+<br>
+<p>4. The land is dry and the area of desertification is increasing.<p>
+</div>
+<img width="1250" height="500" src="https://www.xinhuanet.com//world/2016-11/16/129365031_14792093624261n.jpg">
+<div id="box10">
+<p align="center"><strong>Reponse measure</strong></p>
+</div> 
+<div id="box11">
+<p align="center"><strong>Reduce CO2 in the atmosphere?</strong></p>
+<p> 
+Extensive tree planting and afforestation; stop deforestation. Photosynthesis with sunlight absorbs and fixes carbon dioxide in large quantities in the atmosphere. There are other ways to use chemical reactions to absorb carbon dioxide, but they are technically immature and economically more difficult to implement on a large scale
+</p>
+</div> 
+<div id="box12">
+<p align="center"><strong>Adapt to the climate</strong></p>
+<p> 
+In addition to building coastal protection dikes and other engineering and technical measures to prevent seawater intrusion, the types and varieties of local crops are gradually changed in a planned way to adapt to the gradually changing climate.
+Because of the cool summer in northern Japan, rice was not grown in the past, or the yield was very low. However, due to the breeding of cold-resistant and stress-resistant varieties, even the northernmost Hokkaido can not only grow rice, but also have a high yield. Climate change is a relatively slow process. As long as the climate change trend can be predicted early, adaptation countermeasures can be found and implemented smoothly.
+</p>
+</div>   
+<div id="box13">
+<p align="center"><strong>Reduction of CO2 emissions</strong></p>
+<p> 
+Reducing CO2 emissions is the main purpose of the "Framework Convention on Climate Change" signed by leaders of various countries at the World Conference on Environment and Development in Rio de Janeiro, Brazil in 1992. The Convention requires developed countries to reduce CO2 emissions to the level of 1990 by the year 2000, and provide funds and transfer technology to developing countries to help them reduce CO2 emissions.
+</p>
+</div>  
+<br>
+
+<script>
+function TapItem2(){
+    var el2=document.getElementById("box2");
+    el2.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+     function TapItem(){
+    var el=document.getElementById("box");
+    el.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem1(){
+    var el1=document.getElementById("box1");
+    el1.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem3(){
+    var el3=document.getElementById("box3");
+    el3.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem4(){
+    var el4=document.getElementById("box4");
+    el4.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem5(){
+    var el5=document.getElementById("box5");
+    el5.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem6(){
+    var el6=document.getElementById("box6");
+    el6.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem7(){
+    var el7=document.getElementById("box7");
+    el7.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem8(){
+    var el8=document.getElementById("box8");
+    el8.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem9(){
+    var el9=document.getElementById("box9");
+    el9.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem10(){
+    var el10=document.getElementById("box10");
+    el10.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem11(){
+    var el11=document.getElementById("box11");
+    el11.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem12(){
+    var el12=document.getElementById("box12");
+    el12.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+  function TapItem13(){
+    var el13=document.getElementById("box13");
+    el13.scrollIntoView({
+      block:"start",
+      behavior:"smooth"
+    })
+  }
+ 
+  function showImg(){
+    var img=document.getElementById("img1");
+    img.style.display="block";
+
+  }
+  function hideImg(){
+    var img=document.getElementById("img1");
+    img.style.display="none";
+
+  } 
+  function showtable(){
+    var table=document.getElementById("table");
+    table.style.display="block";
+
+  }
+  function hidetable(){
+    var table=document.getElementById("table");
+    table.style.display="none";
+
+  } 
+  </script>
+</body>
+</html>
